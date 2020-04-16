@@ -24,6 +24,7 @@ libtool
 m4
 make
 mesa
+rsync
 nano
 nasm
 openssh
