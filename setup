@@ -56,6 +56,7 @@ cat > "$target" <<- EOM
 for a in $(ls /RTE_slaves/proc); do
 echo Killing Server
 kill -9 $(cat ${a})
+done
 EOM
 
 echo installation complete
