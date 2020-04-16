@@ -34,7 +34,7 @@ cd /RTE_slaves/${a}
 cat > "$target" <<- EOM
 #!/bin/bash
 cd /RTE_slaves/${a}
-timeallocsync=$(random 60 90)
+timeallocsync=\$(( ( $RANDOM % 90 ) + 60 ))
 port=$(( 8000 + ${a} ))
 dbsync(){
 while true ; do
