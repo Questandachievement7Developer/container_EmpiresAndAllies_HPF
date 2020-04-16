@@ -53,9 +53,9 @@ done
 target=/killAllServer
 cat > "$target" <<- EOM
 #!/bin/bash
-for a in $(ls /RTE_slaves/proc); do
+for a in \$(ls /RTE_slaves_proc); do
 echo Killing Server
-kill -9 $(cat ${a})
+kill -9 \$(cat \${a})
 done
 EOM
 
