@@ -28,7 +28,7 @@ for a in $slaves; do
 
 mkdir /RTE_slaves/${a}
 target=/launchserver_${a}
-cp -rua /RaiseTheEmpires_Master/* /RTE_Slaves/${a} 
+cp -rua /RaiseTheEmpires_Master/* /RTE_slaves/${a} 
 cd /RTE_slaves/${a}
 
 cat > "$target" <<- EOM
